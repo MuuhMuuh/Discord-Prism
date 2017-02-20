@@ -19,3 +19,9 @@ To use a custom background, please use the following in the bottom of your CSS:
 
 
 *It's important to note that if you use* `http://` *instead of* `https://` *then the background will not load.*
+
+
+## Requirements
+You need [BeautifulDiscord](https://github.com/leovoel/BeautifulDiscord) installed.
+
+You can find an in-depth install guide, and other themes over at [The BeautifulDiscord Community](https://github.com/beautiful-discord-community/resources/)
