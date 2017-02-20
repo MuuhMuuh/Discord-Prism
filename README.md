@@ -1,10 +1,13 @@
 # Discord-Prism
 A transparent glass-like theme for Discord with support for your own background.
+[Original Source by eye-sigil](https://github.com/eye-sigil/Discord-Prism)
 
-![Prism Screenshot](https://i.stole-a-me.me/f27b99.png)
+![Prism Screenshot](https://i.imgur.com/cdufXsU.png)
+
 
 ## Custom Backgrounds
-To use a custom background, please use the following in your CSS:
+To use a custom background, please use the following in the bottom of your CSS:
+
 
 ```css
 .app,
@@ -12,3 +15,7 @@ To use a custom background, please use the following in your CSS:
     background-image: url(https://your.image.url/here.png);
 }
 ```
+
+
+
+*It's important to note that if you use* `http://` *instead of* `https://` *then the background will not load.*
