@@ -25,4 +25,3 @@ To use a custom background, please use the following in the bottom of your CSS:
 You need [BeautifulDiscord](https://github.com/leovoel/BeautifulDiscord) installed.
 
 You can find an in-depth install guide, and other themes over at [The BeautifulDiscord Community](https://github.com/beautiful-discord-community/resources/)
-webhook test
