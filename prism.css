@@ -28,6 +28,7 @@
 .friends-table,
 .channels-wrap,
 .guild-channels,
+.layers,
 .links,
 .chat,
 .messages-wrapper,
@@ -39,10 +40,8 @@
 .chat,
 .chat form,
 .theme-dark .channel-members {
-    background: rgba(0, 0, 0, 0.5) !important;
+    background: rgba(0, 0, 0, 0.3) !important;
 }
-
-.theme-dark .layers { background: transparent !important; }
 
 .theme-dark #friends .friends-table .friends-row .friends-column-actions .friends-action {
     background-color: rgba(0, 0, 0, 0.5) !important;
