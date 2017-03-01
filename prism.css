@@ -43,6 +43,10 @@
     background: rgba(0, 0, 0, 0.3) !important;
 }
 
+.guild.unread:before {
+  background: rgba(242, 78, 144, 1) !important;
+}
+
 .theme-dark #friends .friends-table .friends-row .friends-column-actions .friends-action {
     background-color: rgba(0, 0, 0, 0.5) !important;
 }
