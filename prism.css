@@ -224,3 +224,97 @@
     background-color: transparent !important;
     margin: 0 20px;
 }
+
+/*Custom user profile popout*/
+
+@keyframes active-stripes {
+  from {
+    background-position: 40px;
+  }
+  to {
+    background-position: 0px;
+  }
+}
+
+.popout .user-popout .header {
+  background-color: #020c37;
+  box-shadow: inset 0 -64px 32px -1px #1D1D1D;
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, .175) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .175) 50%, rgba(255, 255, 255, .175) 75%, transparent 75%, transparent);
+  background-size: 40px 40px;
+  animation: active-stripes 1.8s linear infinite;
+}
+
+.user-popout .avatar-wrapper .avatar-popout {
+    border: 0px;
+}
+
+/*Nitro Badges*/
+  /*in chat*/
+
+  @keyframes heartbeat {
+  5% {
+    transform: scaleX($scale);
+    opacity: .1;
+  }
+  70% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+.avatar-large[style*="a_"] + .comment .message.first .body .username-wrapper:after {
+  content: '+N';
+	color: white;
+	margin-left: 5px;
+	background: rgba(44, 33, 112, 0.65);
+    line-height: 16px;
+    vertical-align: bottom;
+    border-radius: 3px;
+    margin-left: 6px;
+    padding: 1px 2px;
+    font-size: 10px;
+    font-weight: 600;
+    cursor: text;
+}
+
+  /*memberlist*/
+.member.member-status > .avatar-small[style*="a_"] + .member-inner .member-username:after {
+  content: 'Nitro';
+	color: white;
+	margin-left: 5px;
+	background: rgba(44, 33, 112, 0.65);
+    line-height: 15px;
+    height: 14px;
+    vertical-align: bottom;
+    border-radius: 3px;
+    margin-left: 6px;
+    padding: 1px 2px;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.channel-textarea-autocomplete-inner .avatar-small[style*="a_"] + .discord-tag:after,
+.channel-textarea-autocomplete-inner .avatar-small[style*="a_"] + .username:after {
+    content: ' ';
+    position: absolute;
+    background: url(https://canary.discordapp.com/assets/65f0a0df5563e21de7b1aeeafaf31d78.svg);
+    background-size: 20px;
+    width: 20px;
+    height: 15px;
+    margin-left: 5px;
+}
+
+.channel.channel-voice:not(.collapsed) .avatar-small[style*="a_"] + span:after {
+    content: ' ';
+    position: absolute;
+    background: url(https://canary.discordapp.com/assets/65f0a0df5563e21de7b1aeeafaf31d78.svg);
+    background-size: 20px;
+    width: 20px;
+    height: 15px;
+    margin-top: 1.5px;
+    margin-left: 5px;
+}
+
+.channel.channel-voice li.speaking .avatar-small[style*="a_"] {
+    border-color: #fc964b;
+}
